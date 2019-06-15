@@ -1,8 +1,10 @@
 # aiff_to_header
 
-This repo contains a utility script to create a c style `.h` header file from a `.aiff` source for usage in embedded projects.
+> Utility script creates c style `.h` header file based on an `.aiff` source
 
-## Usage
+Quick and dirty script for including audio samples in embedded projects.
+
+#### Usage
 
 Install dependencies:
 
@@ -20,7 +22,15 @@ $ python aiff_to_header.py chirp.aiff
 
 Inspect output header file created with the same name (e.g. `chirp.h`).
 
-## Reference
+```bash
+$ less chirp.h
+```
+
+#### Authors
+
+- **Jared Ellison** - [jaredellison.net](http://jaredellison.net/)
+
+#### References
 
 - [SoundFile](https://pypi.org/project/SoundFile/)
 
