@@ -38,7 +38,9 @@ top_template = f"""\
 #ifndef {params["header_file_name"].upper()}_H
 #define {params["header_file_name"].upper()}_H
 
-{params["c_type"]} sample = {{
+int {params["header_file_name"]}_LENGTH = %d;
+
+{params["c_type"]} {params["header_file_name"]} [] = {{
     """
 
 bottom_template = f"""
@@ -54,13 +56,13 @@ bottom_template = f"""
 
 if __name__ == "__main__":
     # Process in_file
-    data = get_samples(in_file, params["c_type_max"])
+    data, sample_count = get_samples(in_file, params["c_type_max"])
 
     # Open output file
     out_file = open(out_file + '.h', 'w')
 
     # Write top of header file
-    out_file.write(top_template)
+    out_file.write(top_template % sample_count)
 
     cols = 16
     col = 0

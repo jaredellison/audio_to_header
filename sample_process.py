@@ -24,4 +24,6 @@ def get_samples(file_path, SAMPLE_MAX = 255):
     #   Cast samples to integer
     data = [int(SAMPLE_MAX * ((d * gain + 1) / 2)) for d in data]
 
-    return data
+    sample_count = len(data)
+
+    return data, sample_count
