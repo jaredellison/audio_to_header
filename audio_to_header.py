@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 '''
-    File name: aiff_to_header.py
+    File name: audio_to_header.py
     Author: Jared Ellison
     Date created: June 2019
     Python Version: 3.7.3
