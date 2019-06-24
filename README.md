@@ -1,6 +1,6 @@
 # audio_to_header
 
-> Utility script creates c style `.h` header file based on an audio source file
+> Utility script creates a c style `.h` header file based on an audio source file
 
 Quick and dirty script for including audio samples in embedded projects.
 
