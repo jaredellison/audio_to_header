@@ -1,4 +1,4 @@
-# aiff_to_header
+# audio_to_header
 
 > Utility script creates c style `.h` header file based on an `.aiff` source
 
