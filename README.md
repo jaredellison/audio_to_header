@@ -1,6 +1,6 @@
 # audio_to_header
 
-> Utility script creates c style `.h` header file based on an `.aiff` source
+> Utility script creates a c style `.h` header file based on an audio source file
 
 Quick and dirty script for including audio samples in embedded projects.
 
@@ -12,9 +12,9 @@ Install dependencies:
 $ pip install -r requirements.txt
 ```
 
-Edit `aiff_to_header.py` file to specify parameters such as the C number type - the default format is `uint8_t`.
+Edit `audio_to_header.py` file to specify parameters such as the C number type - the default format is `uint8_t`.
 
-Run script and specify an input file (note this should be a single channel `.aiff` file):
+Run script and specify an input file (this has been tested with a a single channel `.aiff` file but may work with others - see soundfile dependency for compatibility):
 
 ```bash
 $ python aiff_to_header.py chirp.aiff
